@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:padding="@dimen/padding_large" >
+
+    <!-- Nhiệt độ -->
+
+    <!-- Mô tả thời tiết -->
+
+    <!-- Biểu tượng thời tiết -->
+    <ImageView
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frame" />
+
+    <TextView
+        android:id="@+id/temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="@dimen/margin_top_temperature"
+        android:text="@string/temperature_value"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/text_size_temperature" />
+
+    <TextView
+        android:id="@+id/weather_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperature"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/weather_description"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/text_size_description" />
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="99dp"
+        android:layout_height="99dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/rain" />
+
+    <!-- Tên thành phố -->
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="138dp"
+        android:text="@string/city_name"
+        android:textColor="@color/text_color_primary"
+        android:textSize="@dimen/text_size_city" />
+
+</RelativeLayout>
